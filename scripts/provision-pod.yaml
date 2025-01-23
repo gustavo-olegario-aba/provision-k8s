@@ -13,11 +13,8 @@ spec:
       - configMapRef:
           name:  provision-k8s-env
     resources:
-      requests:
-        memory: 512Mi
-        cpu: 500m
       limits:
-        memory: 1Gi
+        memory: 512Mi
         cpu: 1000m
     volumeMounts:
       - mountPath: /home/alpine/config
